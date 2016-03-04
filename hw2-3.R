@@ -31,5 +31,6 @@ bestLassoLambda = 0.1
 #part 3
 ridgeModel <- glmnet(trainDataX, trainDataY, alpha=0)
 lassoModel <- glmnet(trainDataX, trainDataY, alpha=1)
+linearModel <- lm(trainDataY~trainDataX)
 
 
